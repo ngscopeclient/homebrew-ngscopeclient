@@ -2,7 +2,7 @@
 
 Homebrew formulae that allow the installation of [`ngscopeclient`](https://github.com/ngscopeclient/scopehal-apps) through the [Homebrew](https://brew.sh/) package manager.
 
-At the moment, the only formula provided is the one for `ngscopeclient`, and as `ngscopeclient` is under heavy development, this formula is head-only
+At the moment, the only formula provided is the one for `ngscopeclient`, and as `ngscopeclient` is under heavy development, this formula is head-only.
 
 ## Installation
 
