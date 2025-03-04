@@ -18,6 +18,7 @@ class Ngscopeclient < Formula
   depends_on "yaml-cpp"
   depends_on "libsigc++"
   depends_on "hidapi"
+  depends_on "libpng"
 
   on_macos do
     depends_on "molten-vk"
