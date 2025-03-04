@@ -9,16 +9,15 @@ class Ngscopeclient < Formula
   depends_on "vulkan-headers" => :build
 
   depends_on "catch2"
-  depends_on "glew"
   depends_on "glfw"
   depends_on "glslang"
-  depends_on "gtk+3"
-  depends_on "gtkmm3"
   depends_on "libomp"
   depends_on "pkg-config"
   depends_on "spirv-tools"
   depends_on "vulkan-loader"
   depends_on "yaml-cpp"
+  depends_on "libsigc++"
+  depends_on "hidapi"
 
   on_macos do
     depends_on "molten-vk"
