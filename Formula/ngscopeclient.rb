@@ -34,11 +34,6 @@ class Ngscopeclient < Formula
       'if(binDir.find("/usr") != 0)',
       "if(binDir.find(\"#{HOMEBREW_PREFIX}\") != 0)"
 
-    # Patch search paths for Homebrew prefix #624
-    inreplace "lib/scopehal/scopehal.cpp",
-      'g_searchPaths.push_back(binRootDir + "/share/ngscopeclient");',
-      'g_searchPaths.push_back(binRootDir + "/../share/ngscopeclient");'
-
     system "cmake", "-S", ".", "-B", "build", "-DBUILD_DOCS=NO",
       "-DCMAKE_INSTALL_RPATH=#{rpath};#{vulkan_loader_lib}",
       *std_cmake_args
