@@ -11,14 +11,14 @@ class Ngscopeclient < Formula
   depends_on "catch2"
   depends_on "glfw"
   depends_on "glslang"
+  depends_on "hidapi"
   depends_on "libomp"
+  depends_on "libpng"
+  depends_on "libsigc++"
   depends_on "pkg-config"
   depends_on "spirv-tools"
   depends_on "vulkan-loader"
   depends_on "yaml-cpp"
-  depends_on "libsigc++"
-  depends_on "hidapi"
-  depends_on "libpng"
 
   on_macos do
     depends_on "molten-vk"
